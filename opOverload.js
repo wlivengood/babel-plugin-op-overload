@@ -7,7 +7,7 @@ module.exports = function({types: t}) {
 				path.replaceWith(
 					t.expressionStatement(
 						t.callExpression(
-							t.identifier("binaryOperators"),
+							t.identifier("_binaryOperators"),
 							[t.stringLiteral(operator),left, right]
 						)
 					)
@@ -19,7 +19,7 @@ module.exports = function({types: t}) {
 				path.replaceWith(
 					t.expressionStatement(
 						t.callExpression(
-							t.identifier("unaryOperators"),
+							t.identifier("_unaryOperators"),
 							[t.stringLiteral(operator), argument]
 						)
 					)
